@@ -118,8 +118,8 @@
 
 						<div class="nav-container">
 							<ul class="nav">
-								<li class="nav__item"><a  href="index.html">À propos</a></li>
-								<li class="nav__item"><a  class="active" href="resume.html">Expériences</a></li>
+								<li class="nav__item"><a href="index.html">À propos</a></li>
+								<li class="nav__item"><a class="active" href="experiences.html">Expériences</a></li>
 								<li class="nav__item"><a href="portfolio.html">Portfolio</a></li>
 								<li class="nav__item"><a href="contact.html">Contact</a></li>
 							</ul>
@@ -233,7 +233,11 @@
 	<script src="assets/js/jquery-3.4.1.min.js"></script>
 	<script src="assets/js/plugins.min.js"></script>
 	<script src="assets/js/common.js"></script>
-
+	<script>
+		if (location.hostname === "liamcariou.fr") {
+			location.href = "https://www.liamcariou.fr" + location.pathname + location.search + location.hash;
+		}
+	</script>
 </body>
 
 </html>

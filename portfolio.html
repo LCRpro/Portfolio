@@ -118,8 +118,8 @@
 
 						<div class="nav-container">
 							<ul class="nav">
-								<li class="nav__item"><a  href="index.html">À propos</a></li>
-								<li class="nav__item"><a href="resume.html">Expériences</a></li>
+								<li class="nav__item"><a href="index.html">À propos</a></li>
+								<li class="nav__item"><a href="experiences.html">Expériences</a></li>
 								<li class="nav__item"><a class="active" href="portfolio.html">Portfolio</a></li>
 								<li class="nav__item"><a href="contact.html">Contact</a></li>
 							</ul>
@@ -259,10 +259,10 @@
 
 
 						</div>
-<div class="mt-3 small text-muted">
-  <p>* Tous les projets ne sont pas affichés dans cette section.</p>
-  <p>** Certains projets confidentiels ne peuvent pas être consultés en ligne.</p>
-</div>
+						<div class="mt-3 small text-muted">
+							<p>* Tous les projets ne sont pas affichés dans cette section.</p>
+							<p>** Certains projets confidentiels ne peuvent pas être consultés en ligne.</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -273,7 +273,11 @@
 	<script src="assets/js/jquery-3.4.1.min.js"></script>
 	<script src="assets/js/plugins.min.js"></script>
 	<script src="assets/js/common.js"></script>
-
+	<script>
+		if (location.hostname === "liamcariou.fr") {
+			location.href = "https://www.liamcariou.fr" + location.pathname + location.search + location.hash;
+		}
+	</script>
 </body>
 
 </html>

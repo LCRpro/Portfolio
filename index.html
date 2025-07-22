@@ -119,11 +119,12 @@
 						<div class="nav-container">
 							<ul class="nav">
 								<li class="nav__item"><a class="active" href="index.html">À propos</a></li>
-								<li class="nav__item"><a href="resume.html">Expériences</a></li>
+								<li class="nav__item"><a href="experiences.html">Expériences</a></li>
 								<li class="nav__item"><a href="portfolio.html">Portfolio</a></li>
 								<li class="nav__item"><a href="contact.html">Contact</a></li>
 							</ul>
 						</div>
+
 
 						<div class="pb-0 pb-sm-2">
 							<h1 class="title title--h1 title__separate">À propos</h1>
@@ -143,8 +144,12 @@
 								permet aujourd’hui de proposer des solutions digitales à la fois belles, fonctionnelles
 								et bien positionnées sur Google.</p>
 						</div>
-
-						<h2 class="title title--h2 mt-3">Ce que je fais</h2>
+						<div class="alert alert-warning mb-3">
+							<strong>📣 Je suis actuellement à la recherche d'une alternance dans le domaine du
+								développement web.</strong><br>
+							N'hésitez pas à me contacter pour toute opportunité !
+						</div>
+						<h2 class="title title--h2 mt-5">Ce que je fais</h2>
 						<div class="row">
 							<div class="col-12 col-lg-6">
 								<div class="case-item box box-inner">
@@ -244,7 +249,11 @@
 	<script src="assets/js/jquery-3.4.1.min.js"></script>
 	<script src="assets/js/plugins.min.js"></script>
 	<script src="assets/js/common.js"></script>
-
+	<script>
+		if (location.hostname === "liamcariou.fr") {
+			location.href = "https://www.liamcariou.fr" + location.pathname + location.search + location.hash;
+		}
+	</script>
 </body>
 
 </html>
